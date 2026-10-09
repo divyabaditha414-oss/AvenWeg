@@ -1,0 +1,21 @@
+
+# Dependencies and build output
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Editor files
+.vscode/
+.idea/
