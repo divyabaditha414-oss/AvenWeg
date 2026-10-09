@@ -7,6 +7,17 @@ import json
 import shutil
 from pathlib import Path
 
+import sys
+from pathlib import Path
+
+BACKEND_DIR = str(Path(__file__).resolve().parent)
+if BACKEND_DIR not in sys.path:
+    sys.path.insert(0, BACKEND_DIR)
+from models import User, StudentProfile, Resume
+from resume_analyzer import analyze_resume
+from auth import hash_password, verify_password, create_access_token, get_current_user
+from ai_assistant import chat as ai_chat, KB, KB_CATEGORIES, KB_TOPICS
+
 RESUME_UPLOAD_DIR = Path("uploads/resumes")
 RESUME_UPLOAD_DIR.mkdir(
     parents=True,
