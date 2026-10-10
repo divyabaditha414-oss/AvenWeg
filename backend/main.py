@@ -70,6 +70,7 @@ app.add_middleware(
         "http://localhost:5173",
         "http://localhost:5174",
         "https://aven-weg.vercel.app",
+        "https://aven-weg-git-main-focus-guard-ai.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
