@@ -1,13 +1,16 @@
 
 fastapi
-uvicorn
+uvicorn[standard]
 sqlalchemy
-psycopg2-binary
+psycopg[binary]
 python-dotenv
 passlib
 bcrypt
 python-jose
 python-multipart
 PyMuPDF
-psycopg[binary]
 python-docx
+pandas
+joblib
+scikit-learn==1.9.0
+pydantic
