@@ -42,16 +42,10 @@ from auth import (
     get_current_user,
 )
 from ai_assistant import chat as ai_chat, KB, KB_CATEGORIES, KB_TOPICS
+# Store uploads in Vercel's temporary writable directory
+RESUME_UPLOAD_DIR = Path("/tmp/uploads/resumes")
+RESUME_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
-RESUME_UPLOAD_DIR = Path("uploads/resumes")
-
-RESUME_UPLOAD_DIR.mkdir(
-
-    parents=True,
-
-    exist_ok=True
-
-)
 
 ALLOWED_EXTENSIONS = {
 
