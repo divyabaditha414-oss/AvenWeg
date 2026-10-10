@@ -20,7 +20,7 @@ function Sidebar({ user, onClose }) {
 
   const logout = () => {
     localStorage.removeItem("token");
-    navigate("/", { replace: true });
+    navigate("/login", { replace: true });
   };
 
   const initial   = user?.name?.charAt(0).toUpperCase() ?? "?";
