@@ -20,7 +20,7 @@ function Sidebar({ user, onClose }) {
 
   const logout = () => {
     localStorage.removeItem("token");
-    navigate("/login", { replace: true });
+    navigate("/Home", { replace: true });
   };
 
   const initial   = user?.name?.charAt(0).toUpperCase() ?? "?";
@@ -32,7 +32,7 @@ function Sidebar({ user, onClose }) {
       {/* ── LOGO ── */}
       <div className="sidebar__logo">
         <span className="sidebar__logo-mark">✦</span>
-        <span className="sidebar__logo-text">AI Career</span>
+        <span className="sidebar__logo-text"><AvenWeg></AvenWeg></span>
 
         {onClose && (
           <button className="sidebar__close" onClick={onClose} aria-label="Close menu">
