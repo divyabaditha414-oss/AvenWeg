@@ -9,4 +9,5 @@ bcrypt
 python-jose
 python-multipart
 PyMuPDF
+psycopg[binary]
 python-docx
